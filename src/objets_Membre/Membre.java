@@ -12,22 +12,6 @@ public abstract class Membre {
 	protected String nom;
 	protected String code;
 
-	/* CONSTRUCTEURS */
-
-	/*
-	 * 
-	 */
-	public Membre() {
-		this("", "");
-	}
-
-	/*
-	 * 
-	 */
-	public Membre(String nom, String code) {
-		this.setNom(nom);
-	}
-
 	/* GETTERS */
 
 	/*
@@ -35,6 +19,13 @@ public abstract class Membre {
 	 */
 	public String getNom() {
 		return nom;
+	}
+
+	/*
+	 * 
+	 */
+	public String getCode() {
+		return code;
 	}
 
 	/* SETTERS */
@@ -46,6 +37,13 @@ public abstract class Membre {
 		this.nom = nom;
 	}
 
+	/*
+	 * 
+	 */
+	public void setCode(String code) {
+		this.code = code;
+	}
+
 	/* MÉTHODES */
 
 	/*
@@ -53,6 +51,6 @@ public abstract class Membre {
 	 */
 	@Override
 	public String toString() {
-		return this.getNom();
+		return this.getCode() + " - " + this.getNom();
 	}
 }

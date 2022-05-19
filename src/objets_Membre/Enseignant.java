@@ -13,7 +13,6 @@ public class Enseignant extends Membre {
 
 	private static int nbEnseignants;
 
-	private String code;
 	private String departement;
 
 	/* CONSTRUCTEURS */
@@ -29,8 +28,8 @@ public class Enseignant extends Membre {
 	 * 
 	 */
 	public Enseignant(String nom, String departement) {
-		super(nom);
 		nbEnseignants++;
+		this.setNom(nom);
 		this.setCode(Outils.genererCode(this) + "P");
 		this.departement = departement;
 	}
@@ -40,8 +39,8 @@ public class Enseignant extends Membre {
 	/*
 	 * 
 	 */
-	public String getCode() {
-		return code;
+	public String getDepartement() {
+		return departement;
 	}
 
 	/*
@@ -51,34 +50,20 @@ public class Enseignant extends Membre {
 		return nbEnseignants;
 	}
 
-	/*
-	 * 
-	 */
-	public String getDepartement() {
-		return departement;
-	}
-
 	/* SETTERS */
-
-	/*
-	 * 
-	 */
-	public static void setNbEnseignants(int nbEnseignants) {
-		Enseignant.nbEnseignants = nbEnseignants;
-	}
-
-	/*
-	 * 
-	 */
-	public void setCode(String code) {
-		this.code = code;
-	}
 
 	/*
 	 * 
 	 */
 	public void setDepartement(String departement) {
 		this.departement = departement;
+	}
+
+	/*
+	 * 
+	 */
+	public static void setNbEnseignants(int nbEnseignants) {
+		Enseignant.nbEnseignants = nbEnseignants;
 	}
 
 	/* MÉTHODES */

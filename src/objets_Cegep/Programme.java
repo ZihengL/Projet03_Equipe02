@@ -3,6 +3,7 @@ package objets_Cegep;
 import java.util.Arrays;
 
 import objets_Membre.Etudiant;
+import objets_Membre.Membre;
 
 /*
  * Description: 
@@ -17,7 +18,7 @@ public class Programme {
 	private String programme;
 
 	private Cours[] cours;
-	private Etudiant[] membres;
+	private Membre[] membres;
 
 	/* CONSTRUCTEURS */
 
@@ -107,6 +108,13 @@ public class Programme {
 	public void ajouterCours(String cours) {
 		this.cours = Arrays.copyOf(this.cours, this.cours.length + 1);
 		this.cours[this.cours.length - 1] = new Cours(cours);
+	}
+
+	/*
+	 * 
+	 */
+	public void ajouterMembre(Membre membre) {
+
 	}
 
 	/*

@@ -2,6 +2,7 @@ package objets_Cegep;
 
 import objets_Membre.Enseignant;
 import objets_Membre.Etudiant;
+import objets_Membre.Membre;
 
 /*
  * Description: 
@@ -14,24 +15,38 @@ public class Groupe {
 
 	private static final int MAXETUDIANTS = 24;
 
-	private Enseignant enseignant;
-	private Etudiant[] etudiants;
-
+	private Membre[] membres;
 	private String groupe;
+	private int nbEtudiants;
 
 	/* CONSTRUCTEURS */
 
 	public Groupe() {
-		this("", new Enseignant("", ""), new Etudiant[MAXETUDIANTS]);
+		this("", new Enseignant("", ""), new Membre[MAXETUDIANTS + MAXENSEIGNANTS]);
 	}
 
-	public Groupe(String groupe, Enseignant enseignant, Etudiant[] etudiants) {
+	public Groupe(String groupe, Membre[] membres) {
 		this.groupe = groupe;
-		this.enseignant = enseignant;
 		this.setEtudiants(etudiants);
 	}
 
 	/* GETTERS */
+
+	public String getGroupe() {
+		return this.groupe;
+	}
+
+	public Enseignant getEnseignant() {
+		for (Membre membre : this.membres)
+			if (membre instanceof Enseignant)
+				return (Enseignant) membre;
+
+		return null;
+	}
+
+	public Etudiant[] getEtudiants() {
+
+	}
 
 	/* SETTERS */
 

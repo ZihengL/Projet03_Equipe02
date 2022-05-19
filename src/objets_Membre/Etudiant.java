@@ -28,7 +28,6 @@ public class Etudiant extends Membre {
 	 * 
 	 */
 	public Etudiant(String nom) {
-		super(nom);
 		nbEtudiants++;
 		this.setCode(Outils.genererCode(this) + "E");
 	}
@@ -40,13 +39,6 @@ public class Etudiant extends Membre {
 	 */
 	public static int getNbEtudiants() {
 		return nbEtudiants;
-	}
-
-	/*
-	 * 
-	 */
-	public String getCode() {
-		return code;
 	}
 
 	/* SETTERS */
@@ -61,6 +53,7 @@ public class Etudiant extends Membre {
 	/*
 	 * 
 	 */
+	@Override
 	public void setCode(String code) {
 		this.code = code;
 	}
@@ -72,7 +65,7 @@ public class Etudiant extends Membre {
 	 */
 	@Override
 	public String toString() {
-		return "";
+		return super.toString() + " " + ;
 	}
 
 }
