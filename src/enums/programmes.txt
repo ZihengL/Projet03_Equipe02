@@ -1,0 +1,38 @@
+081.A6	Orientation
+081.B6	Mise à niveau
+200.B1	Sciences de la santé et de la vie
+200.B2	Sciences pures et appliquées
+200.B3	Passe-partout
+300.32	Gestion des affaires
+300.33	Psychologie et intervention sociale
+300.34	Sociétés et environnements
+300.35	Études internationales
+500.AG	Cinéma
+500.AH	Études littéraires
+500.AL	Langues, monde et cultures
+140.A0	Techniques d’électrophysiologie médicale
+142.A0	Technologie de radiodiagnostic
+142.F0	Technologie de médecine nucléaire
+142.C0	Technologie de radio-oncologie
+181.A0	Soins préhospitaliers d’urgence
+210.AA	Biotechnologies
+210.AB	Chimie analytique
+221.B0	Technologie du génie civil
+221.C0	Technologie de la mécanique du bâtiment
+230.AB	Géodésie
+235.B0	Technologie du génie industriel
+243.BA	Télécommunication
+243.BB	Ordinateurs et réseaux
+243.C0	Technologie de l’électronique industrielle
+310.A0	Techniques policières
+310.B0	Techniques d’intervention en délinquance
+310.C0	Techniques juridiques
+410.B0	Techniques de comptabilité et de gestion
+410.D0	Gestion de commerces
+411.A0	Archives médicales
+420.AA	Informatique de gestion
+420.AC	Gestion de réseaux informatiques
+570.G0	Graphisme
+581.D0	Infographie en prémédia
+581.B0	Techniques de l’impression
+581.C0	Gestion de projet en communications graphiques
