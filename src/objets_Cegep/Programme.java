@@ -13,8 +13,6 @@ import objets_Membre.Etudiant;
  */
 public class Programme {
 
-	private Cegep cegep;
-
 	private String codeProgramme;
 	private String programme;
 

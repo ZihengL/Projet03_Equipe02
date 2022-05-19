@@ -66,24 +66,16 @@
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <association id="13">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="14" name="cegep"/>      
-      <multiplicity id="15" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="16">    
+  <generalization id="13">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <association id="17">    
+  <association id="14">    
     <bendpoint x="521" y="946"/>    
     <bendpoint x="501" y="1038"/>    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="18" name="membres"/>      
-      <multiplicity id="19" minimum="0" maximum="2147483647"/>    
+      <attribute id="15" name="membres"/>      
+      <multiplicity id="16" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

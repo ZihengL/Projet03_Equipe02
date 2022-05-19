@@ -17,7 +17,6 @@ public class Cegep {
 
 	private Membre[] membres;
 	private Programme[] programmes;
-	private String[] departements;
 
 	/* CONSTRUCTEURS */
 
@@ -33,7 +32,7 @@ public class Cegep {
 
 		this.membres = new Membre[0];
 		this.programmes = new Programme[0];
-		this.departements = new Departement[0];
+
 	}
 
 	/* GETTERS */
@@ -59,28 +58,7 @@ public class Cegep {
 		return this.programmes;
 	}
 
-	/*
-	 * 
-	 */
-	public Departement getDepartement(int position) {
-		return this.departements[position];
-	}
-
-	/*
-	 * 
-	 */
-	public Departement[] getDepartements() {
-		return this.departements;
-	}
-
 	/* SETTERS */
-
-	/*
-	 * 
-	 */
-	public void setDepartements(Departement[] departements) {
-		this.departements = departements;
-	}
 
 	/*
 	 * 
@@ -104,14 +82,6 @@ public class Cegep {
 	public void ajouterMembre(Membre membre) {
 		this.membres = Arrays.copyOf(this.membres, this.membres.length + 1);
 		this.membres[this.membres.length - 1] = membre;
-	}
-
-	/*
-	 * 
-	 */
-	public void ajouterDepartement(String departement) {
-		this.departements = Arrays.copyOf(this.departements, this.departements.length + 1);
-		this.departements[this.departements.length - 1] = new Departement(departement);
 	}
 
 	/*

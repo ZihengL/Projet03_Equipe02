@@ -1,5 +1,9 @@
 package utilitaires;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 
 import objets_Membre.Enseignant;
@@ -30,9 +34,25 @@ public class Outils {
 	/*
 	 * 
 	 */
-	public static void ajouterObjet(Object[] tableau, Object objet) {
-		if (objet.getClass() == tableau.getClass())
+	public static void chargerDepartements(String[] departements) throws FileNotFoundException, IOException {
+		BufferedReader entree = new BufferedReader(new FileReader("/src/enums/departements.txt"));
+		String ligne = entree.readLine();
+
+		departements = new String[0];
+		while (ligne != null) {
+			Outils.incrementerTableau(departements, ligne);
+			ligne = entree.readLine();
+		}
+		entree.close();
+	}
+
+	/*
+	 * 
+	 */
+	public static void incrementerTableau(Object[] tableau, Object objet) {
+		if (objet.getClass() == tableau.getClass()) {
 			tableau = Arrays.copyOf(tableau, tableau.length + 1);
-		tableau[tableau.length - 1] = objet;
+			tableau[tableau.length - 1] = objet;
+		}
 	}
 }
