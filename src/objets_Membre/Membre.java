@@ -7,9 +7,10 @@ package objets_Membre;
  * Date: 18/05/2022
  * V 1.0 
  */
-public class Membre {
+public abstract class Membre {
 
 	protected String nom;
+	protected String code;
 
 	/* CONSTRUCTEURS */
 
@@ -17,13 +18,13 @@ public class Membre {
 	 * 
 	 */
 	public Membre() {
-		this("");
+		this("", "");
 	}
 
 	/*
 	 * 
 	 */
-	public Membre(String nom) {
+	public Membre(String nom, String code) {
 		this.setNom(nom);
 	}
 
