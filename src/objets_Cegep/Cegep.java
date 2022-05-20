@@ -33,7 +33,10 @@ public class Cegep {
 
 		this.membres = new Membre[0];
 		this.programmes = new Programme[0];
+<<<<<<< Updated upstream
 		this.departements = new Departement[0];
+=======
+>>>>>>> Stashed changes
 	}
 
 	/* GETTERS */

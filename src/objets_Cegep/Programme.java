@@ -60,7 +60,7 @@ public class Programme {
 	/*
 	 * 
 	 */
-	public Etudiant[] getMembres() {
+	public Membre[] getMembres() {
 		return this.membres;
 	}
 

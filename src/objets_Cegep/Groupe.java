@@ -22,17 +22,46 @@ public class Groupe {
 	/* CONSTRUCTEURS */
 
 	public Groupe() {
+<<<<<<< Updated upstream
 		this("", new Enseignant("", ""), new Etudiant[MAXETUDIANTS]);
+=======
+		this("", new Enseignant(), new Etudiant[0]);
+>>>>>>> Stashed changes
 	}
 
 	public Groupe(String groupe, Enseignant enseignant, Etudiant[] etudiants) {
 		this.groupe = groupe;
+<<<<<<< Updated upstream
 		this.enseignant = enseignant;
 		this.setEtudiants(etudiants);
+=======
+>>>>>>> Stashed changes
 	}
 
 	/* GETTERS */
 
+<<<<<<< Updated upstream
+=======
+	public String getGroupe() {
+		return this.groupe;
+	}
+
+	public int getNbEtudiants() {
+		return this.nbEtudiants;
+	}
+
+	public Enseignant getEnseignant() {
+		for (Membre membre : this.membres)
+			if (membre instanceof Enseignant)
+				return (Enseignant) membre;
+
+		return null;
+	}
+
+	public Etudiant[] getEtudiants() {
+	}
+
+>>>>>>> Stashed changes
 	/* SETTERS */
 
 	public void setEtudiants(Etudiant[] etudiants) {
