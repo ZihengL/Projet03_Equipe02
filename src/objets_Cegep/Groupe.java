@@ -1,11 +1,14 @@
 package objets_Cegep;
 
+import java.util.Arrays;
+
 import objets_Membre.Enseignant;
 import objets_Membre.Etudiant;
 import objets_Membre.Membre;
+import utilitaires.Tableaux;
 
 /*
- * Description: 
+ * Description: Classe qui simule un objet de type Groupe
  *
  * Auteurs: Zi heng Liu, Natalia Garcia, Mathieu Garcia
  * Date: 18/05/2022
@@ -15,48 +18,72 @@ public class Groupe {
 
 	private static final int MAXETUDIANTS = 24;
 
-	private Membre[] membres;
-	private String groupe;
+	private int groupe;
+	private Enseignant enseignant;
+	private Etudiant[] etudiants;
+
 	private int nbEtudiants;
 
 	/* CONSTRUCTEURS */
 
 	public Groupe() {
-		this("", new Enseignant("", ""), new Membre[MAXETUDIANTS + MAXENSEIGNANTS]);
+		this(0, new Enseignant(), new Etudiant[0]);
 	}
 
-	public Groupe(String groupe, Membre[] membres) {
+	/*
+	 * 
+	 */
+	public Groupe(int groupe, Enseignant enseignant, Etudiant[] etudiants) {
 		this.groupe = groupe;
 		this.setEtudiants(etudiants);
+
 	}
 
 	/* GETTERS */
 
-	public String getGroupe() {
+	public int getGroupe() {
 		return this.groupe;
 	}
 
+	/*
+	 * 
+	 */
 	public Enseignant getEnseignant() {
-		for (Membre membre : this.membres)
-			if (membre instanceof Enseignant)
-				return (Enseignant) membre;
-
-		return null;
+		return this.enseignant;
 	}
 
+	/*
+	 * 
+	 */
 	public Etudiant[] getEtudiants() {
-
+		return this.etudiants;
 	}
 
 	/* SETTERS */
 
-	public void setEtudiants(Etudiant[] etudiants) {
-		for (int i = 0; i < MAXETUDIANTS; i++) {
+	/*
+	 * 
+	 */
+	public void setEtudiant() {
 
-		}
+	}
+
+	/*
+	 * NOTE: BUGGED
+	 */
+	public void setEtudiants(Etudiant[] etudiants) {
+		this.etudiants = Arrays.copyOf(this.etudiants, MAXETUDIANTS);
 	}
 
 	/* MÉTHODES */
+
+	/*
+	 * 
+	 */
+	public void ajouterMembre(Membre membre) {
+	}
+
+	public void 
 
 	/*
 	 * 

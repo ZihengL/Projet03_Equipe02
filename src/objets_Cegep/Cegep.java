@@ -5,7 +5,7 @@ import java.util.Arrays;
 import objets_Membre.Membre;
 
 /*
- * Description: 
+ * Description: Classe qui simule un Cégep
  *
  * Auteurs: Zi heng Liu, Natalia Garcia, Mathieu Garcia
  * Date: 18/05/2022
@@ -72,6 +72,7 @@ public class Cegep {
 	 */
 	public void setProgrammes(Programme[] programmes) {
 		this.programmes = programmes;
+
 	}
 
 	/* MÉTHODES */

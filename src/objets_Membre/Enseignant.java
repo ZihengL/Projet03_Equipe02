@@ -1,10 +1,9 @@
 package objets_Membre;
 
-import utilitaires.Outils;
-
 /*
- * Description: 
+ * Description: Classe qui simule un objet de type Enseignant
  *
+ JTM ZI TU ES UN BO BONOME
  * Auteurs: Zi heng Liu, Natalia Garcia, Mathieu Garcia
  * Date: 16/05/2022
  * V 1.0 
@@ -30,7 +29,7 @@ public class Enseignant extends Membre {
 	public Enseignant(String nom, String departement) {
 		nbEnseignants++;
 		this.setNom(nom);
-		this.setCode(Outils.genererCode(this) + "P");
+		this.setCode();
 		this.departement = departement;
 	}
 
@@ -51,6 +50,15 @@ public class Enseignant extends Membre {
 	}
 
 	/* SETTERS */
+
+	/*
+	 * 
+	 */
+	@Override
+	public void setCode() {
+		super.setCode();
+		this.code = this.getCode() + String.format("%04d", nbEnseignants) + "P";
+	}
 
 	/*
 	 * 

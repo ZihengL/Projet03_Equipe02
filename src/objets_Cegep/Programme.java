@@ -1,12 +1,11 @@
 package objets_Cegep;
 
-import java.util.Arrays;
-
 import objets_Membre.Etudiant;
 import objets_Membre.Membre;
+import utilitaires.Tableaux;
 
 /*
- * Description: 
+ * Description: Classe qui simule un objet de type Programme
  *
  * Auteurs: Zi heng Liu, Natalia Garcia, Mathieu Garcia
  * Date: 18/05/2022
@@ -59,7 +58,7 @@ public class Programme {
 	/*
 	 * 
 	 */
-	public Etudiant[] getMembres() {
+	public Membre[] getMembres() {
 		return this.membres;
 	}
 
@@ -106,15 +105,14 @@ public class Programme {
 	 * 
 	 */
 	public void ajouterCours(String cours) {
-		this.cours = Arrays.copyOf(this.cours, this.cours.length + 1);
-		this.cours[this.cours.length - 1] = new Cours(cours);
+		Tableaux.incrementerTableau(this.cours, new Cours());
 	}
 
 	/*
 	 * 
 	 */
 	public void ajouterMembre(Membre membre) {
-
+		Tableaux.incrementerTableau(this.membres, membre);
 	}
 
 	/*
