@@ -20,6 +20,9 @@ public class Cegep {
 
 	/* CONSTRUCTEURS */
 
+	/*
+	 * 
+	 */
 	public Cegep() {
 		this("");
 	}

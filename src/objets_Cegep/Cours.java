@@ -111,6 +111,13 @@ public class Cours {
 	/*
 	 * 
 	 */
+	public void retirerMembre(Membre membre) {
+
+	}
+
+	/*
+	 * 
+	 */
 	public void ajouterGroupe(int groupe, Enseignant enseignant, Etudiant[] etudiants) {
 		Tableaux.incrementerTableau(this.groupes, new Groupe(groupe, enseignant, etudiants));
 	}

@@ -5,7 +5,6 @@ import java.util.Arrays;
 import objets_Membre.Enseignant;
 import objets_Membre.Etudiant;
 import objets_Membre.Membre;
-import utilitaires.Tableaux;
 
 /*
  * Description: Classe qui simule un objet de type Groupe
@@ -59,6 +58,10 @@ public class Groupe {
 		return this.etudiants;
 	}
 
+	public int getNbEtudiants() {
+		return this.nbEtudiants;
+	}
+
 	/* SETTERS */
 
 	/*
@@ -80,10 +83,15 @@ public class Groupe {
 	/*
 	 * 
 	 */
-	public void ajouterMembre(Membre membre) {
+	public void ajouterMembres(Membre... membre) {
 	}
 
-	public void 
+	/*
+	 * 
+	 */
+	public void retirerMembres(Membre... membre) {
+
+	}
 
 	/*
 	 * 
